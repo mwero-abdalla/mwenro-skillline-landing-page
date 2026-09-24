@@ -1,0 +1,64 @@
+
+// header styles
+header {
+  // background-color:$color-accent;
+  background-color: $color-secondary;
+//   height: 100px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  gap: $space * 2;
+}
+nav li a {
+  display: block;
+  color: $dark;
+  padding: $space * 1 $space * 2;
+  font-weight: 500;
+}
+
+li.auth-btn-group {
+  display: flex;
+  gap: $space;
+  align-items: center;
+
+  // login
+  a {
+    border-radius: $space * 3;
+    background-color: white;
+  }
+
+  .btn-signup {
+    background-color: $color-accent;
+  }
+}
+
+
+// nav logo
+.logo-container{
+    width:40px;
+    height: 40px;
+    position: relative;
+    display: block;
+
+
+    // img
+   img {
+        width: 100%;
+        height:auto;
+    }
+
+    span{
+      position: absolute;  
+      top:30%;
+      left:30%;
+      font-weight: 800;
+      font-size: 1.2rem;
+    }
+
+}

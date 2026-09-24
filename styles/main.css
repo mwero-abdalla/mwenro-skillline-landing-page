@@ -3,12 +3,9 @@
    A small, practical reset to make browser defaults
    more predictable across different browsers.
    ========================================================= */
-
-
 /* ---------------------------------------------------------
    1. BOX SIZING + REMOVE DEFAULT SPACING
    --------------------------------------------------------- */
-
 /*
   box-sizing: border-box means an element's declared
   width/height includes its padding and border.
@@ -28,11 +25,9 @@
   border: 0;
 }
 
-
 /* ---------------------------------------------------------
    2. HTML & BODY
    --------------------------------------------------------- */
-
 /*
   min-height: 100% allows the page to occupy the
   full height of the viewport when needed.
@@ -40,7 +35,6 @@
 html {
   min-height: 100%;
 }
-
 
 /*
   Remove the browser's default body margin.
@@ -51,20 +45,16 @@ html {
 body {
   min-height: 100vh;
   margin: 0;
-
   /* Improve text rendering on supported systems */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
   /* Prevent text from becoming unexpectedly larger on mobile */
   -webkit-text-size-adjust: 100%;
 }
 
-
 /* ---------------------------------------------------------
    3. HEADINGS & TEXT
    --------------------------------------------------------- */
-
 /*
   Browsers apply different default margins and font sizes
   to headings. We remove the margins so you can control
@@ -76,18 +66,13 @@ h3,
 h4,
 h5,
 h6 {
-
   font-size: inherit;
   font-weight: inherit;
 }
 
-
-
-
 /* ---------------------------------------------------------
    4. LISTS
    --------------------------------------------------------- */
-
 /*
   Remove bullets/numbers from lists.
 
@@ -96,14 +81,11 @@ h6 {
 ul,
 ol {
   list-style: none;
- 
 }
-
 
 /* ---------------------------------------------------------
    5. LINKS
    --------------------------------------------------------- */
-
 /*
   Remove the browser's default underline and
   inherit the parent's text color.
@@ -115,11 +97,9 @@ a {
   text-decoration: none;
 }
 
-
 /* ---------------------------------------------------------
    6. IMAGES & MEDIA
    --------------------------------------------------------- */
-
 /*
   Images should never overflow their containers.
 
@@ -135,14 +115,12 @@ video {
   max-width: 100%;
 }
 
-
 /*
   Make images easier to work with inside responsive layouts.
 */
 img {
   height: auto;
 }
-
 
 /*
   Make form/media elements inherit the parent's font.
@@ -156,11 +134,9 @@ object {
   max-width: 100%;
 }
 
-
 /* ---------------------------------------------------------
    7. TABLES
    --------------------------------------------------------- */
-
 /*
   Remove the spacing between table cells and make
   borders behave more predictably.
@@ -170,11 +146,9 @@ table {
   border-spacing: 0;
 }
 
-
 /* ---------------------------------------------------------
    8. FORMS
    --------------------------------------------------------- */
-
 /*
   Form controls don't always inherit typography from
   their parent by default.
@@ -190,7 +164,6 @@ textarea {
   font: inherit;
 }
 
-
 /*
   Prevent textareas from overflowing their containers.
 */
@@ -198,7 +171,6 @@ textarea {
   max-width: 100%;
   resize: vertical;
 }
-
 
 /*
   Remove the default button styling.
@@ -213,7 +185,6 @@ button {
   cursor: pointer;
 }
 
-
 /*
   Make buttons disabled look and behave appropriately.
 */
@@ -224,11 +195,9 @@ textarea:disabled {
   cursor: not-allowed;
 }
 
-
 /* ---------------------------------------------------------
    9. FIELDSETS
    --------------------------------------------------------- */
-
 /*
   Browsers add default borders and padding to fieldsets.
 */
@@ -238,11 +207,9 @@ fieldset {
   margin: 0;
 }
 
-
 /* ---------------------------------------------------------
    10. QUOTES
    --------------------------------------------------------- */
-
 /*
   Remove browser-generated quotation marks.
 
@@ -260,11 +227,9 @@ q::after {
   content: "";
 }
 
-
 /* ---------------------------------------------------------
    11. HORIZONTAL RULE
    --------------------------------------------------------- */
-
 /*
   Give <hr> a predictable appearance.
 */
@@ -274,11 +239,9 @@ hr {
   border-top: 1px solid currentColor;
 }
 
-
 /* ---------------------------------------------------------
    12. PRE / CODE
    --------------------------------------------------------- */
-
 /*
   Prevent long lines of code from breaking layouts.
 */
@@ -289,7 +252,6 @@ samp {
   font-family: monospace;
 }
 
-
 /*
   Allow code blocks to scroll horizontally instead
   of overflowing the page.
@@ -298,11 +260,9 @@ pre {
   overflow-x: auto;
 }
 
-
 /* ---------------------------------------------------------
    13. SUP & SUB
    --------------------------------------------------------- */
-
 /*
   Normalize superscript and subscript positioning.
 */
@@ -322,19 +282,16 @@ sub {
   bottom: -0.25em;
 }
 
-
 /* ---------------------------------------------------------
    14. INTERACTIVE ELEMENTS
    --------------------------------------------------------- */
-
 /*
   Make clickable elements show a pointer.
 */
 button,
-[role="button"] {
+[role=button] {
   cursor: pointer;
 }
-
 
 /*
   Prevent clicks from causing unwanted outlines to be
@@ -349,11 +306,9 @@ button,
   outline-offset: 2px;
 }
 
-
 /* ---------------------------------------------------------
    15. REDUCED MOTION
    --------------------------------------------------------- */
-
 /*
   Respect users who have requested reduced motion
   in their operating system accessibility settings.
@@ -371,3 +326,66 @@ button,
     transition-duration: 0.01ms !important;
   }
 }
+header {
+  background-color: #FFF2E1;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  gap: 1rem;
+}
+
+nav li a {
+  display: block;
+  color: #252641;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+}
+
+li.auth-btn-group {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+li.auth-btn-group a {
+  border-radius: 1.5rem;
+  background-color: white;
+}
+li.auth-btn-group .btn-signup {
+  background-color: #F48C06;
+}
+
+.logo-container {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  display: block;
+}
+.logo-container img {
+  width: 100%;
+  height: auto;
+}
+.logo-container span {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+
+body {
+  background-color: #ccc;
+}
+
+.wrapper {
+  max-width: 1400px;
+  margin-inline: auto;
+  background-color: #fff;
+  padding: 2rem;
+}/*# sourceMappingURL=main.css.map */

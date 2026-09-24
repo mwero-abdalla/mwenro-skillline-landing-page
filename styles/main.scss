@@ -1,9 +1,21 @@
 //Abstracts
 @use "abstracts/resets"; // resets styles
-@use "abstracts/variables"; //variables
+@import "abstracts/variables"; //variables
 
 // base
-@use "base/typography"; // font sizes
+@import "base/typography"; // font sizes
 
- 
+// componetrs
+@import "components/header";
 
+//body
+body {
+  background-color: #ccc;
+}
+// wrapper
+.wrapper {
+  max-width: 1400px;
+  margin-inline: auto;
+  background-color: #fff;
+  padding: $space * 4;
+}
