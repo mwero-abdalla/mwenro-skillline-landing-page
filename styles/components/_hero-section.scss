@@ -1,0 +1,29 @@
+// hero 
+.hero-section{
+    background-color: $color-secondary;
+    min-height: 70vh;
+    margin-top: $header-height;
+    border-bottom-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+
+    display: flex;
+
+
+}
+
+
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    gap:$space;
+}
+
+.hero-text h1{
+
+color:$color-primary;
+
+    span{
+        color:$color-accent;
+
+    }
+}
