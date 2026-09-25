@@ -34,13 +34,37 @@ footer {
 
 // section
 section h2 {
+  color: $color-primary;
+  text-align: center;
 }
 
 section h2 span {
+  color: $color-accent;
 }
 
 section > p {
+  text-align: center;
+  color:$dark;
 }
 
 section h3 {
 }
+
+
+
+// company section
+.company-section{
+
+
+  h2{
+    font-size: 1rem;
+  }
+
+  .logo-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+

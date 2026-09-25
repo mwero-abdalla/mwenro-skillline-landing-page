@@ -1,18 +1,14 @@
-// import the variavbles
-@import "../abstracts/variables" ;
-
 // header styles
 header {
   background-color: $color-secondary;
   position: fixed;
-//   top: 0;
-//   left: 0;
-inset: 0;
+  //   top: 0;
+  //   left: 0;
+  inset: 0;
   max-width: 1400px;
   margin-inline: auto;
-  
 
-//   width: 100%;
+  //   width: 100%;
   height: $header-height;
 }
 nav {
@@ -32,14 +28,14 @@ nav li a {
   border-radius: $space * 3;
   font-weight: 500;
 
-  &:hover{
+  &:hover {
     background-color: $color-accent;
     color: #fff;
   }
 
-  &:active{
-color:white;
-background-color: $color-primary;
+  &:active {
+    color: white;
+    background-color: $color-primary;
   }
 }
 
@@ -56,7 +52,7 @@ li.auth-btn-group {
   .btn-signup {
     background-color: $color-accent;
 
-    &:hover{
+    &:hover {
       background-color: $color-primary;
     }
   }

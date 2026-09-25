@@ -506,4 +506,27 @@ header,
 section,
 footer {
   padding: 2rem;
+}
+
+section h2 {
+  color: #2F327D;
+  text-align: center;
+}
+
+section h2 span {
+  color: #F48C06;
+}
+
+section > p {
+  text-align: center;
+  color: #252641;
+}
+
+.company-section h2 {
+  font-size: 1rem;
+}
+.company-section .logo-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }/*# sourceMappingURL=main.css.map */
