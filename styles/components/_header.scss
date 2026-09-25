@@ -1,13 +1,19 @@
+// import the variavbles
+@use "../abstracts/variables" as abs;
 
 // header styles
 header {
-  background-color: $color-secondary;
+  background-color: abs.$color-secondary;
   position: fixed;
-  top:0;
-  left:0;
+//   top: 0;
+//   left: 0;
+inset: 0;
+  max-width: 1400px;
+  margin-inline: auto;
+  
 
-  width: 100%;
-  height: $header-height;
+//   width: 100%;
+  height: abs.$header-height;
 }
 nav {
   display: flex;
@@ -17,52 +23,63 @@ nav {
 
 nav ul {
   display: flex;
-  gap: $space * 2;
+  gap: abs.$space * 2;
 }
 nav li a {
   display: block;
-  color: $dark;
-  padding: $space * 1 $space * 2;
+  color: abs.$dark;
+  padding: abs.$space * 1 abs.$space * 2;
+  border-radius: abs.$space * 3;
   font-weight: 500;
+
+  &:hover{
+    background-color: abs.$color-accent;
+    color: #fff;
+  }
+
+  &:active{
+color:white;
+background-color: abs.$color-primary;
+  }
 }
 
 li.auth-btn-group {
   display: flex;
-  gap: $space;
+  gap: abs.$space;
   align-items: center;
 
   // login
   a {
-    border-radius: $space * 3;
     background-color: white;
   }
 
   .btn-signup {
-    background-color: $color-accent;
+    background-color: abs.$color-accent;
+
+    &:hover{
+      background-color: abs.$color-primary;
+    }
   }
 }
 
-
 // nav logo
-.logo-container{
-    width:40px;
-    height: 40px;
-    position: relative;
-    display: block;
+.logo-container {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  display: block;
 
+  // img
+  img {
+    width: 100%;
+    height: auto;
+  }
 
-    // img
-   img {
-        width: 100%;
-        height:auto;
-    }
-
-    span{
-      position: absolute;  
-      top:30%;
-      left:30%;
-      font-weight: 800;
-      font-size: 1.2rem;
-    }
-
+  span {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    font-weight: 800;
+    font-size: 1.2rem;
+  }
 }

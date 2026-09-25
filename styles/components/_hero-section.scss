@@ -1,29 +1,25 @@
-// hero 
-.hero-section{
-    background-color: $color-secondary;
-    min-height: 70vh;
-    margin-top: $header-height;
-    border-bottom-left-radius: 30%;
-    border-bottom-right-radius: 30%;
+@use "../abstracts/variables" as abs;
+// hero
+.hero-section {
+  background-color: abs.$color-secondary;
+  min-height: 70vh;
+  margin-top: abs.$header-height;
+  border-bottom-left-radius: 30%;
+  border-bottom-right-radius: 30%;
 
-    display: flex;
-
-
+  display: flex;
 }
 
-
-.hero-text{
-    display: flex;
-    flex-direction: column;
-    gap:$space;
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  gap: abs.$space;
 }
 
-.hero-text h1{
+.hero-text h1 {
+  color: abs.$color-primary;
 
-color:$color-primary;
-
-    span{
-        color:$color-accent;
-
-    }
+  span {
+    color: abs.$color-accent;
+  }
 }

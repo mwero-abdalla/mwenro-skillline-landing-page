@@ -1,44 +1,46 @@
 //Abstracts
 @use "abstracts/resets"; // resets styles
-@import "abstracts/variables"; //variables
+@use "abstracts/variables" as abs; //variables
 
 // base
-@import "base/typography"; // font sizes
+/* Poppins font */
 
-// componetrs
-@import "components/header";
-@import "components/hero-section";
+@use "base/typography"; // font sizes
+
+// // componetrs
+@use "components/header";
+@use "components/hero-section";
 
 //body
 body {
-//   background-color: #ccc;
-background-color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+
+  background-color: #fff;
 }
 // wrapper
 .wrapper {
+  position: relative;
   max-width: 1400px;
   margin-inline: auto;
-//   padding: $space * 4;
+  //  padding: ab.$space * 4;
 }
 
-header,section, footer{
-padding: $space * 4;
-
+header,
+section,
+footer {
+  padding: abs.$space * 4;
 }
 
 // section
-section h2{
-
+section h2 {
 }
 
-section h2 span{
-
+section h2 span {
 }
 
-section > p{
-
+section > p {
 }
 
-section h3{
-    
+section h3 {
 }
