@@ -328,7 +328,7 @@ button,
 }
 /* Poppins font */
 h1 {
-  font-size: 2.5rem;
+  font-size: 2.4rem;
 }
 
 h2 {
@@ -348,7 +348,8 @@ p {
 }
 
 button {
-  font-size: 1.8rem;
+  font-size: 1rem;
+  font-weight: 500;
 }
 
 header {
@@ -427,12 +428,15 @@ li.auth-btn-group .btn-signup:hover {
   border-bottom-left-radius: 30%;
   border-bottom-right-radius: 30%;
   display: flex;
+  justify-content: space-between;
 }
 
 .hero-text {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  justify-content: center;
+  gap: 1rem;
+  width: 48%;
 }
 
 .hero-text h1 {
@@ -440,6 +444,50 @@ li.auth-btn-group .btn-signup:hover {
 }
 .hero-text h1 span {
   color: #F48C06;
+}
+
+.hero-section .hero-btn-group {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.hero-section .hero-btn-group .pri-cta-btn {
+  background-color: #F48C06;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  color: white;
+}
+.hero-section .hero-btn-group .pri-cta-btn:hover {
+  background-color: #2F327D;
+}
+.hero-section .hero-btn-group .sec-cta-btn {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  color: #252641;
+}
+.hero-section .hero-btn-group .sec-cta-btn:hover {
+  background-color: #F48C06;
+  color: white;
+}
+.hero-section .hero-btn-group .sec-cta-btn div {
+  box-shadow: 2px 1px 5px #252641;
+  background-color: white;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-section .hero-btn-group .sec-cta-btn div img {
+  width: 30%;
+  margin-left: 0.25rem;
+}
+
+.hero-image {
+  width: 48%;
 }
 
 body {

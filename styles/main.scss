@@ -1,15 +1,15 @@
 //Abstracts
-@use "abstracts/resets"; // resets styles
-@use "abstracts/variables" as abs; //variables
+@import "abstracts/resets"; // resets styles
+@import "abstracts/variables" ; //variables
 
 // base
 /* Poppins font */
 
-@use "base/typography"; // font sizes
+@import "base/typography"; // font sizes
 
 // // componetrs
-@use "components/header";
-@use "components/hero-section";
+@import "components/header";
+@import "components/hero-section";
 
 //body
 body {
@@ -29,7 +29,7 @@ body {
 header,
 section,
 footer {
-  padding: abs.$space * 4;
+  padding: $space * 4;
 }
 
 // section

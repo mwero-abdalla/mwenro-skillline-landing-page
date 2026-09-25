@@ -1,25 +1,93 @@
-@use "../abstracts/variables" as abs;
+@import "../abstracts/variables";
 // hero
 .hero-section {
-  background-color: abs.$color-secondary;
+  background-color: $color-secondary;
   min-height: 70vh;
-  margin-top: abs.$header-height;
+  margin-top: $header-height;
   border-bottom-left-radius: 30%;
   border-bottom-right-radius: 30%;
 
   display: flex;
+  justify-content: space-between;
 }
 
 .hero-text {
+
+    // padding-top: 2* $space;
   display: flex;
   flex-direction: column;
-  gap: abs.$space;
+  justify-content: center;
+  gap: $space * 2;
+  width: 48%;
 }
 
 .hero-text h1 {
-  color: abs.$color-primary;
+  color: $color-primary;
 
   span {
-    color: abs.$color-accent;
+    color: $color-accent;
   }
+}
+
+.hero-section .hero-btn-group {
+  display: flex;
+  gap: $space;
+  align-items: center;
+
+  // pri
+
+  .pri-cta-btn {
+    background-color: $color-accent;
+    padding: $space 2 * $space;
+    border-radius: 2 * $space;
+    color: white;
+
+    &:hover {
+      background-color: $color-primary;
+    }
+  }
+
+  // sec
+
+  .sec-cta-btn {
+    display: flex;
+    gap: $space;
+
+    // background-color: yellow;
+    padding: $space  2 * $space;
+    border-radius: 2 * $space;
+    color: $dark;
+
+    &:hover {
+      background-color: $color-accent;
+      color:white;
+    }
+
+    //image
+    div {
+        box-shadow: 2px 1px 5px $dark;
+      background-color: white;
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      //img
+      img {
+        width: 30%;
+        margin-left: $space * .5
+      }
+    }
+  }
+}
+
+// .hero-text p{
+
+// }
+
+.hero-image {
+  width: 48%;
 }

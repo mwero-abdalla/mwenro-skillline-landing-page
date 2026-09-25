@@ -1,9 +1,9 @@
 // import the variavbles
-@use "../abstracts/variables" as abs;
+@import "../abstracts/variables" ;
 
 // header styles
 header {
-  background-color: abs.$color-secondary;
+  background-color: $color-secondary;
   position: fixed;
 //   top: 0;
 //   left: 0;
@@ -13,7 +13,7 @@ inset: 0;
   
 
 //   width: 100%;
-  height: abs.$header-height;
+  height: $header-height;
 }
 nav {
   display: flex;
@@ -23,29 +23,29 @@ nav {
 
 nav ul {
   display: flex;
-  gap: abs.$space * 2;
+  gap: $space * 2;
 }
 nav li a {
   display: block;
-  color: abs.$dark;
-  padding: abs.$space * 1 abs.$space * 2;
-  border-radius: abs.$space * 3;
+  color: $dark;
+  padding: $space * 1 $space * 2;
+  border-radius: $space * 3;
   font-weight: 500;
 
   &:hover{
-    background-color: abs.$color-accent;
+    background-color: $color-accent;
     color: #fff;
   }
 
   &:active{
 color:white;
-background-color: abs.$color-primary;
+background-color: $color-primary;
   }
 }
 
 li.auth-btn-group {
   display: flex;
-  gap: abs.$space;
+  gap: $space;
   align-items: center;
 
   // login
@@ -54,10 +54,10 @@ li.auth-btn-group {
   }
 
   .btn-signup {
-    background-color: abs.$color-accent;
+    background-color: $color-accent;
 
     &:hover{
-      background-color: abs.$color-primary;
+      background-color: $color-primary;
     }
   }
 }
